@@ -1,7 +1,9 @@
+import Scroll from "../components/SmoothScroll";
+
+
 export default function App() {
   return (
-    <>
-
+    <div>
       <header className="bg-blue-300 w-screen h-auto relative border border-transparent md:h-screen font-questrial text-2xl">
         <img src="paint.webp" className="absolute md:w-[480px] w-[150px] h-[150px] md:h-[453px] top-[-10px] left-[-10px]" alt="" />
         <div className="py-8 px-2 flex justify-end items-center">
@@ -23,7 +25,7 @@ export default function App() {
         </a>
       </header>
       <main className="font-questrial h-auto">
-        <section className="h-auto bg-red-400 py-20">
+        <section id="section-one" className="h-auto bg-red-400 py-20">
           <div className=" p-4 ">
             <p className=" md:w-[500px] h-auto text-base md:text-xl 2xl:text-3xl">Bienvenido a mi portafolio, soy Camilo Pinilla, un apasionado
               desarrollador Front-end enfocado en abordar proyectos
@@ -38,7 +40,8 @@ export default function App() {
           </div>
         </section>
       </main>
-    </>
+    <Scroll />
+    </div>
 
   )
 }
