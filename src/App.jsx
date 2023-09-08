@@ -27,7 +27,7 @@ export default function App() {
       <main className="font-questrial h-auto">
         <section id="section-one" className="h-auto bg-red-400 py-20">
           <div className=" p-4 ">
-            <p className=" md:w-[500px] h-auto text-base md:text-xl 2xl:text-3xl">Bienvenido a mi portafolio, soy Camilo Pinilla, un apasionado
+            <p className=" md:w-[500px]  p-4 h-auto text-base md:text-xl 2xl:text-3xl">Bienvenido a mi portafolio, soy Camilo Pinilla, un apasionado
               desarrollador Front-end enfocado en abordar proyectos
               cautivantes e interactivos.</p>
           </div>
@@ -35,8 +35,22 @@ export default function App() {
             <p className=" h-auto  text-5xl md:text-[160px]">UX/UI</p>
           </div>
           <div className="  p-4  flex justify-end">
-            <p className="text-base md:w-[500px] md:text-xl 2xl:text-3xl block ">Marcando distinguidos y novedosos diseños acorde a
+            <p className="text-base  p-4 md:w-[500px] md:text-xl 2xl:text-3xl block ">Marcando distinguidos y novedosos diseños acorde a
               tendencias en UI/UX con el uso de tecnologias y estandares empleados en la industria.</p>
+          </div>
+        </section>
+        <section className="h-auto md:flex py-4 px-6 md:justify-between">
+          <div className="md:w-1/2 w-full h-auto grid place-content-center p-2 justify-center">
+            <h2 className="text-2xl border md:text-7xl py-8">Perfil profesional</h2>
+            <p className="text-base md:text-xl leading-relaxed">Tecnologo en anàlisis y desarrollo de software, con aptitudes enfocadas a la investigacion, resolucion de problemas y necesidades, diseño de arquitecturas de sofware, desarrollo e implementacion de aplicaciones de software haciendo uso de diversas tecnologias.</p>
+            <br />
+            <p className="text-base md:text-xl leading-relaxed">Experiencia solida en el campo del desarrollo Front-end aplicando practicas de experiencia de usuario y usabilidad , prototipado de interfaces de usuario, Implementando diseños responsivos adaptables a diferentes tamaños de pantallas.</p>
+            <br />
+            <button className="text-base border border-black md:text-xl py-4 px-8 mx-auto mt-8 flex justify-center text-center md:w-[45%]"><a href="#">sobre camilo</a></button>
+          </div>
+          <div className="h-auto md:w-1/2 p-4 md:shrink-0 relative flex items-center justify-center ">
+            <div className="h-full w-full top-0 left-0 absolute hidden"></div>
+            <img src="photo-one.webp" alt="" className="h-[70%] mt-8 object-cover" />
           </div>
         </section>
       </main>
