@@ -55,3 +55,31 @@
 .font-semibold {
     font-weight: 600;
 }
+
+.border-r-2 {
+    border-right-width: 2px;
+}
+
+.mt-48 {
+    margin-top: 12rem/* 192px */;
+}
+
+.mb-20 {
+    margin-bottom: 5rem/* 80px */;
+}
+
+
+.w-\[70px\] {
+    width: 70px;
+}
+
+.h-\[70px\] {
+    height: 70px;
+}
+
+.pt-\[3px\] {
+    padding-top: 3px;
+}
+.w-16 {
+    width: 4rem/* 64px */;
+}

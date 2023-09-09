@@ -1,4 +1,5 @@
 
+import { ListItemOne, ListItemThree, ListItemTwo } from "../components/ListItem";
 import SectionTitle from "../components/SectionTitle";
 import Scroll from "../components/SmoothScroll";
 import StudyCard from "../components/StudyCard";
@@ -74,7 +75,7 @@ export default function App() {
                 dataone="Servicio Nacional de Aprendizaje "
                 datatwo="Bogota - Colombia"
                 datathree="2022 - 2024"
-                
+
               />
               <StudyCard
                 title="Fundamentos de programacion"
@@ -82,7 +83,7 @@ export default function App() {
                 dataone="Fundacion telefonica Movistar"
                 datatwo="Bogota - Colombia"
                 datathree="16 OCT - 2021"
-                
+
               />
               <StudyCard
                 title="Implementacion de soluciones  de ciberseguridad en la nube "
@@ -90,10 +91,43 @@ export default function App() {
                 dataone="Intelligent training"
                 datatwo="Bogota - Colombia"
                 datathree="23 SEPT - 2022"
-                
+
               />
             </div>
           </div>
+        </section>
+        {/* //TODO: forth section */}
+        <section className="h-auto mt-48">
+          <SectionTitle title="Habilidades y tecnologias" />
+          <article className="md:flex">
+            <div className="md:w-1/2 h-auto  items-center border-r-2">
+              <h3 className="p-4 text-center text-2xl md:text-3xl">Tecnologias</h3>
+              <ul className="mt-8">
+                <ListItemOne />
+                <ListItemTwo />
+                <ListItemThree />
+              </ul>
+            </div>
+            <div className=" md:w-1/2 h-auto">
+              <h3 className="p-4 text-center text-2xl md:text-3xl">Habilidades blandas</h3>
+              <div className="md:flex  mt-8">
+                <ul className=" p-4 w-full">
+                  <li className="flex p-4 items-center justify-around">
+                    <p className="p-4 text-base md:text-xl">Administracion del tiempo</p>
+                    <img className=" md:w-[140px] w-28 h-28 md:h-[140px]" src="time.png" alt="" />
+                  </li>
+                  <li className="flex p-4 items-center justify-around">
+                    <img className=" md:w-[120px] w-24 h-24 md:h-[120px]" src="team.png" alt="" />
+                    <p className="p-4 text-base md:text-xl">Trabajo en equipo</p>
+                  </li>
+                  <li className="flex p-4 items-center justify-around">
+                    <p className="p-4 text-base md:text-xl">Resolucion de problemas</p>
+                    <img className=" md:w-[140px] w-28 h-28 md:h-[140px]" src="idea.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </section>
       </main>
       <Scroll />
