@@ -136,7 +136,7 @@ export default function App() {
         {/* //TODO: five section */}
         <section className="h-auto mt-12 md:mt-48">
           <SectionTitle title="Proyectos desarrollados" />
-          <div className=" md:flex md:my-20 mx-8">
+          <div className=" md:flex mt-4 md:my-20 mx-8">
             <div className="md:w-1/2  flex justify-center relative items-center">
               <img src="uno.webp" className="cursor-pointer" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
             </div>
@@ -146,7 +146,7 @@ export default function App() {
             </div>
           </div>
           <div className="md:flex  md:my-20 mx-8">
-            <div className="md:w-1/2  grid place-content-center py-8 xl:pl-4 md:pr-4">
+            <div className="md:w-1/2  grid place-content-center py-2 md:py-8 xl:pl-4 md:pr-4">
               <h4 className="text-xl underline md:text-3xl md:p-4 red-theme py-4 " id="title-two" style={{ viewTransitionName: "title-two" }}>Calidad en cada pixel</h4>
               <p className="text-base md:p-4 py-4">Optimiza el rendimiento de tu sitio web con nuestra herramienta especializada en redimensionar imágenes. Acelera la carga de páginas y mejora la experiencia del usuario. ¡Transforma tu sitio hoy y ofrece un rendimiento excepcional con imágenes optimizadas!</p>
             </div>
