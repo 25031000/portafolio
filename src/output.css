@@ -1,0 +1,57 @@
+
+
+.text-xl {
+    font-size: 1.25rem/* 20px */;
+    line-height: 1.75rem/* 28px */;
+}
+
+.text-lg {
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+}
+
+@media (min-width: 768px) {
+    .md\:text-3xl {
+        font-size: 1.875rem/* 30px */;
+        line-height: 2.25rem/* 36px */;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:bottom-0 {
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:right-0 {
+        right: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:border-none {
+        border-style: none;
+    }
+}
+
+.border-b-2 {
+    border-bottom-width: 1px;
+}
+
+.decoration-red-400 {
+    text-decoration-color: #f87171;
+}
+
+.underline {
+
+    text-decoration: 2px underline #f87171;
+}
+
+.font-nixie {
+    font-family: "Nixie One", sans-serif;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
