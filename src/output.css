@@ -83,3 +83,19 @@
 .w-16 {
     width: 4rem/* 64px */;
 }
+
+@media (min-width: 768px) {
+    .md\:mb-20 {
+        margin-bottom: 5rem/* 80px */;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:w-24 {
+        width: 6rem/* 96px */;
+    }
+}
+
+hr{
+    border-color: black;
+}

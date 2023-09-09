@@ -5,6 +5,10 @@ import Scroll from "../components/SmoothScroll";
 import StudyCard from "../components/StudyCard";
 
 export default function App() {
+
+  function handleViewTrans(params) {
+    console.log("done");
+  }
   return (
     <div>
       {/* //TODO: header */}
@@ -97,11 +101,11 @@ export default function App() {
           </div>
         </section>
         {/* //TODO: forth section */}
-        <section className="h-auto mt-48">
+        <section className="h-auto mt-12 md:mt-48">
           <SectionTitle title="Habilidades y tecnologias" />
           <article className="md:flex">
             <div className="md:w-1/2 h-auto  items-center border-r-2">
-              <h3 className="p-4 text-center text-2xl md:text-3xl">Tecnologias</h3>
+              <h3 className="p-4 text-center underline text-xl md:text-3xl">Tecnologias</h3>
               <ul className="mt-8">
                 <ListItemOne />
                 <ListItemTwo />
@@ -109,7 +113,7 @@ export default function App() {
               </ul>
             </div>
             <div className=" md:w-1/2 h-auto">
-              <h3 className="p-4 text-center text-2xl md:text-3xl">Habilidades blandas</h3>
+              <h3 className="p-4 text-center underline text-xl md:text-3xl">Habilidades blandas</h3>
               <div className="md:flex  mt-8">
                 <ul className=" p-4 w-full">
                   <li className="flex p-4 items-center justify-around">
@@ -129,6 +133,50 @@ export default function App() {
             </div>
           </article>
         </section>
+        {/* //TODO: five section */}
+        <section className="h-auto mt-12 md:mt-48">
+          <SectionTitle title="Proyectos desarrollados" />
+          <div className=" md:flex md:my-20 mx-8">
+            <div className="md:w-1/2  flex justify-center relative items-center">
+              <img src="uno.webp" className="cursor-pointer" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
+            </div>
+            <div className="md:w-1/2  grid place-content-center py-8 xl:pr-4 md:pl-4">
+              <h4 className="text-xl underline md:text-3xl red-theme md:p-4 py-4 " id="title-one" style={{ viewTransitionName: "title-one" }}>Ciclo hidrologico del planeta</h4>
+              <p className="text-base md:p-4 py-4">Explora el fascinante ciclo hidrológico de nuestro planeta a través de nuestro sitio web. Descubre cómo el agua fluye en un constante viaje, desde la evaporación hasta la precipitación y más. Únete a nosotros para comprender y preservar este vital proceso. ¡Sumérgete en el ciclo del agua hoy mismo!</p>
+            </div>
+          </div>
+          <div className="md:flex  md:my-20 mx-8">
+            <div className="md:w-1/2  grid place-content-center py-8 xl:pl-4 md:pr-4">
+              <h4 className="text-xl underline md:text-3xl md:p-4 red-theme py-4 " id="title-two" style={{ viewTransitionName: "title-two" }}>Calidad en cada pixel</h4>
+              <p className="text-base md:p-4 py-4">Optimiza el rendimiento de tu sitio web con nuestra herramienta especializada en redimensionar imágenes. Acelera la carga de páginas y mejora la experiencia del usuario. ¡Transforma tu sitio hoy y ofrece un rendimiento excepcional con imágenes optimizadas!</p>
+            </div>
+            <div className="md:w-1/2  flex justify-center items-center">
+              <img src="dos.webp" className="cursor-pointer" onClick={handleViewTrans} style={{ viewTransitionName: "img-two" }} alt="" />
+            </div>
+          </div>
+        </section>
+        {/* //TODO: footer section */}
+        <footer id="footer" className="h-auto  bg-red-500 py-4 px-4 mt-12 md:mt-48">
+          <div className=" md:flex justify-between p-4 md:p-8">
+            <div >
+              <h3 className="text-3xl md:text-7xl py-4">Sobre mi</h3>
+              <p className="text-base md:text-xl py-2 md:pl-2">Conoce mas acerca de mi persona, como mis intereses, objetivos, experiencia y perspectiva en la siguiente sección.</p>
+            </div>
+            <div className="  flex items-center md:mr-4 md:m-0 md:ml-4">
+              <a className="block hover:bg-tertiary transition-all hover:bg-opacity-40 rounded-full py-2" href="/about-one"><img className="w-16 h-16 md:w-24 md:h-24 cursor-pointer" src="back-btn.webp" alt="" /></a>
+            </div>
+          </div>
+          <hr className="px-12 w-[95%] mx-auto" />
+          <h4 className=" p-4 text-center text-2xl mt-8 md:text-4xl">Redes sociales</h4>
+          <nav className=" p-4 flex justify-center gap-2 md:gap-8">
+            <img width={60} height={60} className="cursor-pointer" src="Instagram.webp" alt="" />
+            <img width={60} height={60} className="cursor-pointer" src="github.webp" alt="" />
+            <img width={60} height={60} className="cursor-pointer" src="Discord.webp" alt="" />
+            <img width={60} height={60} className="cursor-pointer" src="Linkedin.webp" alt="" />
+          </nav>
+          <h4 className=" p-4 text-center text-xl mt-8 md:text-2xl ">Desarrollado por Camilo Pinilla</h4>
+
+        </footer>
       </main>
       <Scroll />
     </div>
