@@ -34,7 +34,7 @@ export default function App() {
       </header>
       <main className="font-questrial h-auto text-tertiary">
         {/* //TODO: Presentation section */}
-        <section id="section-one" className="h-auto bg-red-400 py-20">
+        <section id="section-one" className="h-auto bg-red-400 mt-20 md:py-20">
           <div className=" px-8 ">
             <p className=" md:w-[500px]  h-auto text-base md:text-xl 2xl:text-3xl">Bienvenido a mi portafolio, soy Camilo Pinilla, un apasionado
               desarrollador Front-end enfocado en abordar proyectos
@@ -52,7 +52,7 @@ export default function App() {
         <section className="h-auto md:flex py-4 mb-12 mt-4 px-6 md:justify-between">
           <div className="md:w-1/2 w-full h-auto grid place-content-center p-2 justify-center">
             <h2 className="text-2xl  md:text-7xl py-8">Perfil profesional</h2>
-            <p className="text-base  md:text-xl leading-relaxed">Tecnologo en anàlisis y desarrollo de software, con aptitudes enfocadas a la investigacion, resolucion de problemas y necesidades, diseño de arquitecturas de sofware, desarrollo e implementacion de aplicaciones de software haciendo uso de diversas tecnologias.</p>
+            <p className="text-base  md:text-xl leading-relaxed">Tecnologo en anàlisis y desarrollo de software, con aptitudes investigativas, resolucion de problemas y necesidades, diseño de arquitecturas de sofware, desarrollo e implementacion de aplicaciones de software haciendo uso de diversas tecnologias.</p>
             <br />
             <p className="text-base md:text-xl leading-relaxed">Experiencia solida en el campo del desarrollo Front-end aplicando practicas de experiencia de usuario y usabilidad , prototipado de interfaces de usuario, Implementando diseños responsivos adaptables a diferentes tamaños de pantallas.</p>
             <br />
