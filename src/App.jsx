@@ -3,6 +3,7 @@ import { ListItemOne, ListItemThree, ListItemTwo } from "../components/ListItem"
 import SectionTitle from "../components/SectionTitle";
 import Scroll from "../components/SmoothScroll";
 import StudyCard from "../components/StudyCard";
+import './output.css';
 
 export default function App() {
 
@@ -15,7 +16,7 @@ export default function App() {
       <header className="bg-blue-300 text-tertiary w-screen h-auto relative border border-transparent md:h-screen font-questrial text-2xl">
         <img src="paint.webp" className="absolute md:w-[480px] w-[150px] h-[150px] md:h-[453px] top-[-10px] left-[-10px]" alt="" />
         <div className="py-8 px-2 flex justify-end items-center">
-          <img src="menu.webp" className="cursor-pointer w-8 h-8 md:w-12 md:h-12 rounded-full p-2 transition-all hover:bg-gray" alt="" />
+          <img src="menu.webp" className="cursor-pointer w-10 h-10 md:w-12 md:h-12 rounded-md p-2 transition-all hover:bg-gray" alt="" />
         </div>
         <h1 className="mx-auto my-auto px-4 text-center mt-12 md:mt-48 ">
           <span className="block leading-tight ">
@@ -124,7 +125,7 @@ export default function App() {
                     <img className=" md:w-[140px] w-28 h-28 md:h-[140px]" src="time.png" alt="" />
                   </li>
                   <li className="flex p-4 items-center justify-around">
-                    <img className=" md:w-[120px] w-24 h-24 md:h-[120px]" src="team.png" alt="" />
+                    <img className=" md:w-[120px] w-28 h-28 md:h-[120px]" src="team.png" alt="" />
                     <p className="p-4 text-base md:text-xl">Trabajo en equipo</p>
                   </li>
                   <li className="flex p-4 items-center justify-around">
