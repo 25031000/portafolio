@@ -1,52 +1,45 @@
 
+import { useEffect } from "react";
+import Header from "../components/Header";
 import { ListItemOne, ListItemThree, ListItemTwo } from "../components/ListItem";
 import SectionTitle from "../components/SectionTitle";
 import Scroll from "../components/SmoothScroll";
 import StudyCard from "../components/StudyCard";
 import './output.css';
 
+//greensock
+
+//import gsap from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js";
+//import scrollTrigger from "https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"
+
 export default function App() {
 
   function handleViewTrans(params) {
     console.log("done");
   }
+
   return (
     <div>
       {/* //TODO: header */}
-      <header className="bg-blue-300 text-tertiary w-screen h-auto relative border border-transparent md:h-screen font-questrial text-2xl">
-        <img src="paint.webp" className="absolute md:w-[480px] w-[150px] h-[150px] md:h-[453px] top-[-10px] left-[-10px]" alt="" />
-        <div className="py-8 px-2 flex justify-end items-center">
-          <img src="menu.webp" className="cursor-pointer w-10 h-10 md:w-12 md:h-12 rounded-md p-2 transition-all hover:bg-gray" alt="" />
-        </div>
-        <h1 className="mx-auto my-auto px-4 text-center mt-12 md:mt-48 ">
-          <span className="block leading-tight ">
-            <span className="text-4xl md:text-7xl lg:text-[110px] 2xl:text-[160px]">DESARROLLADOR</span>
-          </span>
-          <span className="block text-4xl md:text-7xl lg:text-[110px] 2xl:text-[160px]">FRONT-END</span>
-        </h1>
-        <div className="mt-4 text-base gap-4 px-4 justify-center md:text-xl 2xl:text-3xl flex ">
-          <p>Interactividad</p>
-          <p>Diseno</p>
-          <p>Rendimiento</p>
-        </div>
-        <a href="#section-one">
-          <img src="down-arrow.webp" className="mx-auto mt-12 md:mt-44 rounded-full cursor-pointer p-4 w-12 h-12 md:w-16 md:h-16 transition-all hover:bg-gray" alt="" />
-        </a>
-      </header>
-      <main className="font-questrial h-auto text-tertiary">
+      <Header />
+      <main className="font-questrial h-auto border border-transparent  trigger text-tertiary">
         {/* //TODO: Presentation section */}
-        <section id="section-one" className="h-auto bg-red-400 mt-20 md:py-20">
-          <div className=" px-8 ">
-            <p className=" md:w-[500px]  h-auto text-base md:text-xl 2xl:text-3xl">Bienvenido a mi portafolio, soy Camilo Pinilla, un apasionado
-              desarrollador Front-end enfocado en abordar proyectos
-              cautivantes e interactivos.</p>
-          </div>
-          <div className=" p-4 flex justify-center items-center md:h-60">
-            <p className=" h-auto  text-5xl md:text-[160px]">UX/UI</p>
-          </div>
-          <div className="  px-8  flex justify-end">
-            <p className="text-base  md:w-[500px] md:text-xl 2xl:text-3xl block ">Marcando distinguidos y novedosos diseños acorde a
-              tendencias en UI/UX con el uso de tecnologias y estandares empleados en la industria.</p>
+        <section id="section-one" className="h-auto md:mt-56">
+          <div className=" px-4 md:px-8 flex flex-col">
+            <div className=" p-4  hidden md:flex justify-center mt-8 md:mt-0 items-center md:h-60">
+              <p className=" h-auto box text-7xl md:text-[160px]">UX/UI</p>
+            </div>
+            <div className=" p-4 md:p-8 border modal md:opacity-0 md:bg-primary gradient text-primary sm:border-none mt-8 rounded-xl w-full md:w-[50%]  flex justify-start">
+              <p className="text-base  md:p-4 md:w-[500px] md:text-3xl 2xl:text-6xl block ">
+                <strong>¡Bienvenid@ a mi portafolio web! Soy un desarrollador front-end  apasionado por crear experiencias de usuario impactantes. Explora mi trabajo en UX/UI.</strong></p>
+            </div>
+            <div className="h-auto w-full mt-4 md:mt-2 md:w-[50%] rounded-xl md:opacity-0 modalTwo p-1 md:p-2 gradient">
+              <div className=" p-2 md:p-8 h-full bg-primary text-tertiary rounded-md relative w-full  flex justify-start">
+                <p className="text-base  md:p-2 md:w-[500px] md:text-3xl 2xl:text-6xl block ">
+                  <strong>Te invito a explorar mis proyectos personales, donde plasmo mi pasión por la innovación y el diseño. Descubre mi creatividad y enfoque en cada uno de ellos. ¡Bienvenid@!</strong></p>
+              </div>
+            </div>
+
           </div>
         </section>
         {/* //TODO: Professional profile section */}
@@ -60,7 +53,7 @@ export default function App() {
             <div>
               <button className="text-base btn-shadow bg-tertiary text-primary md:text-xl py-4 px-8 mx-auto mt-8 flex justify-center text-center md:w-[45%]"><a href="#">sobre camilo</a></button>
             </div>
-            
+
           </div>
           <div className="h-auto md:w-1/2 py-4 px-2 md:shrink-0 relative flex items-  justify-center ">
             <div className="h-full w-full top-0 left-0 absolute hidden"></div>
@@ -182,7 +175,7 @@ export default function App() {
 
         </footer>
       </main>
-      <Scroll />
+      {/* <Scroll /> */}
     </div>
 
   )

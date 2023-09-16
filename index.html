@@ -17,7 +17,7 @@
     }
 
     html {
-      scroll-behavior: smooth;
+      overflow-x: hidden;
     }
   </style>
 </head>
@@ -29,7 +29,42 @@
   <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
   <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script>
+    setTimeout(() => {
+      if (window.innerWidth > 870) {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".trigger",
+            start: " top top top",
+            end: "+=1000",
+            scrub: 1,
+            pin: true,
+          }
+        });
+        tl.to(".box", { scale: 2, duration: 5 })
+        tl.to(".box", { xPercent: 150, duration: 5 })
+        tl.to(".modal", { yPercent: -120, opacity: 1, duration: 3 })
+        tl.to(".modalTwo", { yPercent: -100, opacity: 1, duration: 3 })
+      }else if(window.innerWidth > 768){
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".trigger",
+            start: " top top top",
+            end: "+=1000",
+            scrub: 1,
+            pin: true,
+          }
+        });
+        tl.to(".box", { scale: 1.6, duration: 5 })
+      }else{
+        console.log("scroll animation not available");
+      }
+      
+    }, 500);
 
+  </script>
 </body>
 
 </html>

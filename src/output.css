@@ -571,3 +571,13 @@ hr {
         font-size: 160px;
     }
 }
+
+.gradient{
+    background: linear-gradient(121deg, rgba(255,58,48,1) 0%, rgba(163,4,235,1) 40%, rgba(0,61,255,1) 100%);
+}
+
+@media (min-width: 768px) {
+    .md\:w-\[50\%\] {
+        width: 50%;
+    }
+}
