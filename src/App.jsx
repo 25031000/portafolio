@@ -22,7 +22,7 @@ export default function App() {
     <div>
       {/* //TODO: header */}
       <Header />
-      <main className="font-questrial h-auto border border-transparent  trigger text-tertiary">
+      <main className="font-questrial h-auto border border-transparent bg-primary  trigger text-tertiary">
         {/* //TODO: Presentation section */}
         <section id="section-one" className="h-auto md:mt-56 relative">
           <div className=" px-4 md:px-8 flex flex-col ">
@@ -38,7 +38,7 @@ export default function App() {
           <p className="md:hidden block bg-gradient-to-r sm:text-center text-grad text-3xl p-4 pl-5 bg-clip-text text-transparent"><strong>¡Bienvenid@ a mi portafolio web!</strong></p>
         </section>
         {/* //TODO: Professional profile section */}
-        <section className="h-auto grid border  md:px-12 md:grid-cols-2 gap-2 p-4 mb-12 ">
+        <section className="h-auto grid relative bottom-16  md:px-12 md:grid-cols-2 gap-2 p-4 mb-12 ">
           <card className=" w-full h-auto p-8 md:py-12 pl-8 flex flex-col justify-center rounded-3xl border bg-tertiary text-primary">
             <h2 className="text-2xl  md:text-7xl mb-8 "><strong>Perfil profesional</strong></h2>
             <p className="md:text-2xl leading-relaxed">
@@ -92,58 +92,25 @@ export default function App() {
             </div>
           </card>
         </section>
-        {/* //TODO: Technologies section */}
-        <section className="h-auto mt-12 md:mt-48">
-          <SectionTitle title="Habilidades y tecnologias" />
-          <article className="md:flex">
-            <div className="md:w-1/2 h-auto  items-center border-r-2">
-              <h3 className="p-4 text-center underline text-xl md:text-3xl">Tecnologias</h3>
-              <ul className="mt-8">
-                <ListItemOne />
-                <ListItemTwo />
-                <ListItemThree />
-              </ul>
-            </div>
-            <div className=" md:w-1/2 h-auto">
-              <h3 className="p-4 text-center underline text-xl md:text-3xl">Habilidades blandas</h3>
-              <div className="md:flex  mt-8">
-                <ul className=" p-4 w-full">
-                  <li className="flex p-4 items-center justify-around">
-                    <p className="p-4 text-base md:text-xl">Administracion del tiempo</p>
-                    <img className=" md:w-[140px] w-28 h-28 md:h-[140px]" src="time.png" alt="" />
-                  </li>
-                  <li className="flex p-4 items-center justify-around">
-                    <img className=" md:w-[120px] w-28 h-28 md:h-[120px]" src="team.png" alt="" />
-                    <p className="p-4 text-base md:text-xl">Trabajo en equipo</p>
-                  </li>
-                  <li className="flex p-4 items-center justify-around">
-                    <p className="p-4 text-base md:text-xl">Resolucion de problemas</p>
-                    <img className=" md:w-[140px] w-28 h-28 md:h-[140px]" src="idea.png" alt="" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </article>
-        </section>
         {/* //TODO: Projects section */}
-        <section className="h-auto mt-12 md:mt-48">
-          <SectionTitle title="Proyectos desarrollados" />
-          <div className=" md:flex mt-4 md:my-20 mx-8">
-            <div className="md:w-1/2  flex justify-center relative items-center img-af after:h-full after:ease-linear after:duration-300 after:transition-all ">
-              <img src="uno.webp" className="cursor-pointer " onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
+        <section className="h-auto mt-12 md:mt-32">
+          <h3 className="text-4xl md:text-6xl lg:text-[110px] bg-clip-text text-transparent text-grad text-center border"><strong>Proyectos desarrollados</strong></h3>
+          <div className=" md:flex mt-4 md:my-20 mx-4 md:mx-10">
+            <div className="md:w-1/2 py-8  flex  justify-center relative items-center  ">
+              <img src="uno.webp" className="cursor-pointer h-64 md:h-[120%] rounded-3xl" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
             </div>
             <div className="md:w-1/2  grid place-content-center py-8 xl:pr-4 md:pl-4">
-              <h4 className="text-xl underline md:text-3xl red-theme md:p-4 py-4 " id="title-one" style={{ viewTransitionName: "title-one" }}>Ciclo hidrologico del planeta</h4>
-              <p className="text-base md:p-4 py-4">Explora el fascinante ciclo hidrológico de nuestro planeta a través de nuestro sitio web. Descubre cómo el agua fluye en un constante viaje, desde la evaporación hasta la precipitación y más. Únete a nosotros para comprender y preservar este vital proceso. ¡Sumérgete en el ciclo del agua hoy mismo!</p>
+              <h4 className="text-xl md:text-3xl md:p-4 py-4 px-2 " id="title-one" style={{ viewTransitionName: "title-one" }}><strong>Ciclo hidrologico del planeta</strong></h4>
+              <p className="text-base md:p-4 py-4 px-2">Explora el fascinante ciclo hidrológico de nuestro planeta a través de nuestro sitio web. Descubre cómo el agua fluye en un constante viaje, desde la evaporación hasta la precipitación y más. Únete a nosotros para comprender y preservar este vital proceso. ¡Sumérgete en el ciclo del agua hoy mismo!</p>
             </div>
           </div>
-          <div className="md:flex  md:my-20 mx-8">
-            <div className="md:w-1/2  grid place-content-center py-2 md:py-8 xl:pl-4 md:pr-4">
-              <h4 className="text-xl underline md:text-3xl md:p-4 red-theme py-4 " id="title-two" style={{ viewTransitionName: "title-two" }}>Calidad en cada pixel</h4>
-              <p className="text-base md:p-4 py-4">Optimiza el rendimiento de tu sitio web con nuestra herramienta especializada en redimensionar imágenes. Acelera la carga de páginas y mejora la experiencia del usuario. ¡Transforma tu sitio hoy y ofrece un rendimiento excepcional con imágenes optimizadas!</p>
+          <div className=" md:flex mt-4 md:my-20 mx-4 md:mx-10">
+            <div className="md:w-1/2  grid place-content-center py-8 xl:pr-4 md:pl-4">
+              <h4 className="text-xl md:text-3xl md:p-4 py-4 px-2 " id="title-one" style={{ viewTransitionName: "title-one" }}><strong>Calidad en cada pixel</strong></h4>
+              <p className="text-base md:p-4 py-4 px-2">Optimiza el rendimiento de tu sitio web con nuestra herramienta especializada en redimensionar imágenes. Acelera la carga de páginas y mejora la experiencia del usuario. ¡Transforma tu sitio hoy y ofrece un rendimiento excepcional con imágenes optimizadas!</p>
             </div>
-            <div className="md:w-1/2  flex justify-center items-center img-be before:h-full before:ease-linear before:duration-300 before:transition-all">
-              <img src="dos.webp" className="cursor-pointer " onClick={handleViewTrans} style={{ viewTransitionName: "img-two" }} alt="" />
+            <div className="md:w-1/2 py-8  flex  justify-center relative items-center ">
+              <img src="dos.webp" className="cursor-pointer h-64 md:h-[120%] rounded-3xl" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
             </div>
           </div>
         </section>

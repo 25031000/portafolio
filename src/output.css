@@ -158,30 +158,6 @@ hr {
 }
 
 
-.img-af:hover::after{
-    content: "❮";
-    padding: 6px;
-    width: 15px;
-    height: 100%;
-    background-color: #FA383B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
-.img-be:hover::before{
-    content: "❯";
-    padding: 6px;
-    width: 15px;
-    height: 100%;
-    background-color: #FA383B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-}
-
 .text-6xl {
     font-size: 3.75rem/* 60px */;
     line-height: 1;
@@ -595,4 +571,10 @@ hr {
 
 .bg-clip-text {
     background-clip: text;
+}
+
+header{
+    background-image: url("bbblurry5.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
