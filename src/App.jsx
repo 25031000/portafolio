@@ -34,7 +34,7 @@ export default function App() {
             <p className=" md:p-4 w-full md:text-[32px] xl:text-[54px] lg:text-[40px] leading-tight 2xl:text-6xl block ">
               <strong>¡Bienvenid@ a mi portafolio web! Soy un desarrollador front-end  apasionado por crear experiencias de usuario impactantes. Explora mi trabajo en UX/UI.</strong></p>
           </div>
-          <img src="photo-one.webp" className="absolute md:right-16 lg:right-32 img-ani opacity-0 md:w-[250px] md:h-[520px] lg:w-[310px] lg:h-[580px] xl:w-[350px]  xl:h-[620px]" alt="" srcset="" />
+          <img src="photo-one.webp" className="absolute md:right-16 lg:right-32 img-ani opacity-0 md:w-[250px] md:h-[460px] lg:w-[310px] lg:h-[580px] xl:w-[350px]  xl:h-[620px]" alt="" srcset="" />
           <p className="md:hidden block bg-gradient-to-r sm:text-center text-grad text-3xl p-4 pl-5 bg-clip-text text-transparent"><strong>¡Bienvenid@ a mi portafolio web!</strong></p>
         </section>
         {/* //TODO: Professional profile section */}
