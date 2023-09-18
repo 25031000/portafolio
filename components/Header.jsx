@@ -6,7 +6,7 @@ export default function Header() {
             <div className="py-2 px-2 flex justify-end items-center ">
                 <img src="menu.webp" className="cursor-pointer w-10 h-10 md:w-12 m-2 md:h-12 rounded-md p-2 transition-all hover:bg-gray" alt="" />
             </div>
-            <h1 className="lg:text-[170px] text-4xl md:text-8xl md:mt-12 block p-4 leading-tight "><strong>Desarrollador</strong> <span className="block  p-0"><strong>Front-end</strong></span></h1>
+            <h1 className="lg:text-[150px] text-4xl md:text-8xl md:mt-12 block p-4 leading-tight "><strong>Desarrollador</strong> <span className="block  p-0"><strong>Front-end</strong></span></h1>
             <div className="mt-4 text-base gap-4 p-4  justify-start md:text-xl 2xl:text-3xl sm:flex ">
                 <div className="p-2 flex flex-col md:mt-32">
                     <h4><strong>Diseno</strong></h4>

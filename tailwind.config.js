@@ -14,6 +14,7 @@ export default {
     },
     colors: {
       "primary": "hsl(302, 7%, 94%)",
+      "alternative": "#F1EFF1",
       "secondary": "#FA383B",
       "tertiary": "rgb(9, 9, 11)",
       "gray": "rgba(175, 167, 167, 19%)",

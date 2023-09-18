@@ -574,7 +574,25 @@ hr {
 }
 
 header{
-    background-image: url("bbblurry5.svg");
+    background-image: url("bbblurry.svg");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.first-hover:hover .hover-one{
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes wipe-out-up {
+    from {
+      clip-path: inset(0 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 100% 0);
+    }
+  }
+  
+  [transition-style="out:wipe:up"] {
+    animation: 1s cubic-bezier(0.47, 0, 0.745, 0.715) wipe-out-up both;
+  }
