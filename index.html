@@ -56,6 +56,32 @@
         tl.to(".modal", { yPercent: -76, opacity: 1, duration: 5 })
         tl.to(".img-ani", { yPercent: -168, opacity: 1, duration: 5 });
 
+        const th = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".trigger-two",
+            start: " -=490",
+            end: "+=500",
+            scrub: 1,
+            //pin: true,
+          }
+        });
+        th.to(".box-two", { left: 0, duration: 35 })
+        th.to(".box-three", { yPercent: -102, duration: 35 })
+        
+  
+        const tc = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".trigger-three",
+            start: " +=200",
+            end: "+=500",
+            scrub: 1,
+            //pin: true,
+          }
+        });
+
+        tc.to(".box-four", { xPercent: -457, duration: 15 })
+
+
       } else if (window.innerWidth > 768) {
         const tl = gsap.timeline({
           scrollTrigger: {
