@@ -4,76 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preload" href="/bbblurry1.svg" as="image" type="image/svg" fetchpriority="high">
   <link rel="stylesheet" href="./src/index.css">
   <link rel="stylesheet" href="./src/output.css">
   <link rel="stylesheet" href="https://unpkg.com/transition-style">
-  <title>Camilo dev</title>
+   <title>Camilo dev</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nixie+One&family=Questrial&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
     body {
       margin: 0;
-      height: 100vh;
+      height: 100%;
       background-color: #F1EFF1;
     }
 
     html {
-      overflow-x: hidden;
+      overflow-x: hidden !important;
     }
   </style>
 </head>
 
-<body>
+<body class="font-questrial">
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
-  <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <script src="https://codepen.io/GreenSock/pen/7ba936b34824fefdccfe2c6d9f0b740b.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-  <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js?v=3.12"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-    let smoother = ScrollSmoother.create({
-      smooth: 2,   // seconds it takes to "catch up" to native scroll position
-      effects: true // look for data-speed and data-lag attributes on elements and animate accordingly
-    });
-    setTimeout(() => {
-      if (window.innerWidth > 870) {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".trigger",
-            start: " top top top",
-            end: "+=1000",
-            scrub: 1,
-            pin: true,
-          }
-        });
-        tl.to(".box", { scale: 2, duration: 5 })
-        tl.to(".box", { opacity: 0, duration: 5 })
-        tl.to(".modal", { yPercent: -76, opacity: 1, duration: 5 })
-        tl.to(".img-ani", { yPercent: -168, opacity: 1, duration: 5 });
-
-      } else if (window.innerWidth > 768) {
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: ".trigger",
-            start: " top top top",
-            end: "+=1000",
-            scrub: 1,
-            pin: true,
-          }
-        });
-        tl.to(".box", { scale: 1.6, duration: 5 })
-      } else {
-        console.log("scroll animation not available");
-      }
-
-    }, 500);
-
-  </script>
+  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 
 </html>

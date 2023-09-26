@@ -8,8 +8,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "questrial": ['"Questrial"', 'cursive'],
-        "nixie": ['"Nixie One"', 'sans-serif'],
+        "questrial": ['"Questrial"', 'sans-serif'],
       },
     },
     colors: {
