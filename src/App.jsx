@@ -1,5 +1,3 @@
-
-import { useEffect } from "react";
 import Header from "../components/Header";
 import Grid from "../components/Grid";
 
@@ -42,26 +40,61 @@ export default function App() {
         <section id="section-three" className="h-auto mt-48 md:mt-48">
           <div className=" md:flex mt-12 md:my-20 mx-4 md:mx-10">
             <div className="md:w-1/2 py-8  flex  justify-center relative items-center  ">
-              <img src="uno.webp" className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
+              <img
+                src="uno.webp"
+                className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl"
+                onClick={handleViewTrans}
+                style={{ viewTransitionName: "img-one" }}
+                alt=""
+              />
             </div>
             <div className="md:w-1/2  grid place-content-center py-8 xl:pr-4 md:pl-4">
-              <h4 className="text-xl md:text-3xl md:p-4 py-4 px-2 " id="title-one" style={{ viewTransitionName: "title-one" }}><strong>Ciclo hidrologico del planeta</strong></h4>
-              <p className="text-base md:p-4 py-4 px-2">Explora el fascinante ciclo hidrológico de nuestro planeta a través de nuestro sitio web. Descubre cómo el agua fluye en un constante viaje, desde la evaporación hasta la precipitación y más. Únete a nosotros para comprender y preservar este vital proceso. ¡Sumérgete en el ciclo del agua hoy mismo!</p>
+              <h4
+                className="text-xl md:text-3xl md:p-4 py-4 px-2 "
+                id="title-one"
+                style={{ viewTransitionName: "title-one" }}
+              >
+                <strong>Ciclo hidrologico del planeta</strong>
+              </h4>
+              <p className="text-base md:p-4 py-4 px-2">
+                Explora el fascinante ciclo hidrológico de nuestro planeta a
+                través de nuestro sitio web. Descubre cómo el agua fluye en un
+                constante viaje, desde la evaporación hasta la precipitación y
+                más. Únete a nosotros para comprender y preservar este vital
+                proceso. ¡Sumérgete en el ciclo del agua hoy mismo!
+              </p>
             </div>
           </div>
           <div className=" md:flex mt-4 md:my-20 mx-4 md:mx-10">
             <div className="md:w-1/2  grid place-content-center py-8 xl:pr-4 md:pl-4">
-              <h4 className="text-xl md:text-3xl md:p-4 py-4 px-2 " id="title-one" style={{ viewTransitionName: "title-one" }}><strong>Calidad en cada pixel</strong></h4>
-              <p className="text-base md:p-4 py-4 px-2">Optimiza el rendimiento de tu sitio web con nuestra herramienta especializada en redimensionar imágenes. Acelera la carga de páginas y mejora la experiencia del usuario. ¡Transforma tu sitio hoy y ofrece un rendimiento excepcional con imágenes optimizadas!</p>
+              <h4
+                className="text-xl md:text-3xl md:p-4 py-4 px-2 "
+                id="title-one"
+                style={{ viewTransitionName: "title-one" }}
+              >
+                <strong>Calidad en cada pixel</strong>
+              </h4>
+              <p className="text-base md:p-4 py-4 px-2">
+                Optimiza el rendimiento de tu sitio web con nuestra herramienta
+                especializada en redimensionar imágenes. Acelera la carga de
+                páginas y mejora la experiencia del usuario. ¡Transforma tu
+                sitio hoy y ofrece un rendimiento excepcional con imágenes
+                optimizadas!
+              </p>
             </div>
             <div className="md:w-1/2 py-8  flex  justify-center relative items-center ">
-              <img src="dos.webp" className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl" onClick={handleViewTrans} style={{ viewTransitionName: "img-one" }} alt="" />
+              <img
+                src="dos.webp"
+                className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl"
+                onClick={handleViewTrans}
+                style={{ viewTransitionName: "img-one" }}
+                alt=""
+              />
             </div>
           </div>
         </section>
       </main>
       {/* <Scroll /> */}
     </div>
-
-  )
+  );
 }
