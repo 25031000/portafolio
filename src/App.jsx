@@ -4,6 +4,7 @@ import Grid from "../components/Grid";
 import './output.css';
 
 import initGSAP from "../libs/gsap.init.js";
+import { useEffect } from "react";
 
 export default function App() {
 
@@ -14,35 +15,38 @@ export default function App() {
   function handleViewTrans(params) {
     console.log("done");
   }
-
+ 
   return (
     <div id="container" className="scroller overflow-x-hidden" style={{ height: "100vh", overflowX: "hidden" }}>
       <Header />
       <main id="main" className="h-auto  bg-alternative   text-tertiary">
         {/* //TODO: Presentation section */}
         <section className="md:h-screen sm:flex ">
-          <div className="md:w-[60%]  p-2 md:pl-16 md:flex flex-col relative justify-center lg:justify-around">
-            <div className="circle hidden lg:block md:w-72 md:h-72 top-56 right-20 rounded-full absolute"></div>
-            <div className="circle hidden lg:block md:w-12 md:h-12 top-[470px] right-[320px] rounded-full absolute"></div>
-            <div className="circle hidden lg:block md:w-4 md:h-4 top-[670px] right-64 rounded-full absolute"></div>
-            <p className="md:text-3xl text-lg md:mt-0 mt-8 sm:w-72 px-4 py-2 lg:w-[69%] z-10">
+          <div className="sm:w-1/2 md:w-[60%] sm:mr-8 mt-8 sm:mt-0 md:mr-0 circles-cont   p-2 lg:pl-16 flex flex-col relative justify-center lg:justify-around">
+            <div transition-style="in:circle:center" className="circle hidden  lg:hidden md:w-12 md:h-12 cir-two top-[520px] right-[220px] lg:top-[470px] lg:right-[320px] rounded-full absolute"></div>
+            <div transition-style="in:circle:center" className="circle hidden  lg:hidden md:w-4 md:h-4 cir-three top-[670px] right-64 rounded-full absolute"></div>
+            <div transition-style="in:circle:center" className="circle cir-one hidden  lg:hidden lg:w-72 lg:h-72 top-56 right-20 rounded-full absolute"></div>
+            <p className="md:text-3xl text-lg md:mt-0 mt-8  w-full px-4 py-2 lg:w-[69%] z-10">
               ¡Bienvenid@ a mi portafolio web! Soy un desarrollador front-end apasionado por crear experiencias de usuario impactantes. Explora mi trabajo en UX/UI.
             </p>
-            <p className=" hidden md:block mt-4 pl-4 text-xl">Camilo Pinilla <span className="md:ml-16">Bogota D.C</span></p>
+            <p className=" hidden md:block mt-4 pl-4 text-2xl text-subgray"> <small>About me</small> <small className="md:ml-8 text-subgray">Projects</small></p>
           </div>
-          <div className="flex md:w-[40%] items-center justify-center">
+          <div className="flex slider-cont relative md:w-[40%] items-center justify-center">
+            <div className="h-full slider-img w-full top-0 left-0 bg-primary absolute"></div>
             <img className="w-[300px] md:mt-0 mt-8 px-8 h-96 md:w-4/5 md:h-3/6 lg:h-3/4" src="photo-one.webp" alt="" />
           </div>
         </section>
         {/* //TODO: Professional profile section */}
-        <Grid />
+          <Grid />
         {/* //TODO: Projects section */}
-        <section id="section-three" className="h-auto mt-48 md:mt-48">
-          <div className=" md:flex mt-12 md:my-20 mx-4 md:mx-10">
-            <div className="md:w-1/2 py-8  flex  justify-center relative items-center  ">
+        <section id="section-three" className="h-auto  mt-40 md:mt-32">
+          <h2 className=" text-center "><strong className="text-2xl md:text-6xl tracking-widest  lg:text-[140px]">Proyectos</strong></h2>
+          <div className=" md:flex mt-16   md:my-28 mx-4 md:mx-10">
+            <div className="md:w-1/2 py-8  slider-cont2 flex  justify-center relative items-center  ">
+              <div className="slider-img2 absolute img-eff top-0 left-0 bg-primary "></div>
               <img
                 src="uno.webp"
-                className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl"
+                className="cursor-pointer img-effect h-64 md:h-[110%] md:w-[90%] "
                 onClick={handleViewTrans}
                 style={{ viewTransitionName: "img-one" }}
                 alt=""
@@ -54,7 +58,7 @@ export default function App() {
                 id="title-one"
                 style={{ viewTransitionName: "title-one" }}
               >
-                <strong>Ciclo hidrologico del planeta</strong>
+                Ciclo hidrologico del planeta
               </h4>
               <p className="text-base md:p-4 py-4 px-2">
                 Explora el fascinante ciclo hidrológico de nuestro planeta a
@@ -72,7 +76,7 @@ export default function App() {
                 id="title-one"
                 style={{ viewTransitionName: "title-one" }}
               >
-                <strong>Calidad en cada pixel</strong>
+                Calidad en cada pixel
               </h4>
               <p className="text-base md:p-4 py-4 px-2">
                 Optimiza el rendimiento de tu sitio web con nuestra herramienta
@@ -82,10 +86,11 @@ export default function App() {
                 optimizadas!
               </p>
             </div>
-            <div className="md:w-1/2 py-8  flex  justify-center relative items-center ">
+            <div className="md:w-1/2 py-8 slider-cont2  flex  justify-center relative items-center ">
+            <div className="slider-img2 absolute img-eff top-0 left-0 bg-primary "></div>
               <img
                 src="dos.webp"
-                className="cursor-pointer h-64 md:h-[110%] md:w-[90%] rounded-3xl"
+                className="cursor-pointer h-64 img-effect md:h-[110%] md:w-[90%] "
                 onClick={handleViewTrans}
                 style={{ viewTransitionName: "img-one" }}
                 alt=""
@@ -94,7 +99,6 @@ export default function App() {
           </div>
         </section>
       </main>
-      {/* <Scroll /> */}
     </div>
   );
 }
